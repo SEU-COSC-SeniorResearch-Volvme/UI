@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Volvume</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Latest compiled and minified CSS -->
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="./js/functions.js"></script>
+  <script src="./js/generalFunctions.js"></script>
+  <link rel="stylesheet" href="./css/generalStyle.css" >
+</head>
+<body>
+<div class="row" id="navBar">
+    <div class="col-sm-3"></div>
+  <div class="col-sm-6"></div>
+    <div class="col-sm-3" style="padding-left:40px;height:120px; font-size:19px;">
+<br/>
+      <br/>
+      <br/>
+      <div id="logInLogOut">
+      <a id='logInLink'style="color:#F6931D;"href="#" onclick="logIn()">Login</a>
+      </div>
+    </div>
+
+</div>
+
+<div class="row" id="weatherNotification">
+  <div class="col-sm-5"></div>
+  <div class="col-sm-2"><div id="centerLogo" onclick="loadLandingPage()"></div></div>
+  <div class="col-sm-5"></div>
+</div>
+
+<div class="container" id="mainContentType2">
+  <div id="contentWrapperType2">
+    <div class="row" Style="margin-top:400px;">
+      <div class="col-sm-6">
+        <img style="margin-left:20px;"height="50" src="./images/quote.png" alt="A brilliant new social media platform built to connect people who love music">
+
+      </div>
+      <div class="col-sm-6"></div>
+<div class="row">
+  <div class="col-sm-3"></div>
+  <div class="col-sm-4">
+    <div onclick="loadSignUp();" id='siteButton'></div>
+  </div>
+  <div class="col-sm-5"></div>
+</div>
+  </div>
+</div>
+</div>
+
+<!--<div class="row" id="musicFeed">-->
+  <!--Top Artist Chart<br />-->
+  <!--Austin Texas Radio<br />-->
+
+
+
+<!--</div>-->
+<!--<div id="navWrapper">-->
+  <!--<div class="row" id="playerNav">-->
+    <!--<img id='playButton' src="./images/play.png" onclick="playPlayer()" style="margin:15px;"height="50px" width="50px" alt="playButton">-->
+    <!--<img id='pauseButton' onclick="pausePlayer()" src="./images/pause.png" style="margin:15px;"height="50px" width="50px" alt="playButton">-->
+    <!--<audio id="audioPlayer" style="display:none;">-->
+      <!--<source src="./media/Vendetta.mp3" type="audio/mpeg">-->
+      <!--Your browser does not support the audio element.-->
+    <!--</audio>-->
+
+    <!--<script>-->
+      <!--function pausePlayer() {-->
+        <!--$('#audioPlayer').trigger("pause");-->
+      <!--}-->
+
+      <!--function playPlayer() {-->
+        <!--$('#audioPlayer').trigger("play");-->
+      <!--}-->
+
+    <!--</script>-->
+
+  <!--</div>-->
+<!--</div>-->
+
+
+
+
+<script>
+  loadLandingPage();
+
+</script>
+<audio id="audioPlayer" style="display:none;">
+  <source src="./media/Vendetta.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Volvume</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <script src="./js/parseCookie.js"></script>
+  <script src="./js/generalFunctions.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+  <!-- Latest compiled and minified CSS -->
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./css/generalStyle.css" >
+</head>
+<body>
+<div class="row" id="navBar">
+
+
+
+  <div id='navMenue'>
+    <ul>
+      <li><a class="./index.html" href="./index.html">Home</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./artistLogin.html">Login</a></li>
+    </ul>
+
+
+  </div>
+
+
+  <div class="col-sm-12" ></div>
+</div>
+
+<div class="row" id="weatherNotification">
+  <div class="col-sm-4"></div>
+  <div class="col-sm-4"><div id="centerLogo"></div></div>
+  <div class="col-sm-4"></div>
+</div>
+
+
+<div class="container" id="mainContent">
+  <div id="contentWrapper">
+
+    <div id="profile">
+      <h2>Artist Profile Page</h2>
+
+      <img id='album' src="./images/groupPhoto.jpg" style="margin:15px;"height="100px" width="100px" alt="playButton">
+
+
+
+
+      <v>Artist: <r>Killer V King</r></v><br />
+      <v>Band Members: <r>2</r></v> <br />
+      <v>Venues Played: <r>Cheer Up Charlies, Mohawk</r></v> <br />
+      <v>Typical Garuntee: <r>$400</r></v> <br />
+      <v>Attendence: <r>50</r></v> <br />
+      <v>Will Travel: <r>yes</r></v> <br />
+      <v>Donation Towards Content: <r>yes</r></v>
+    </div>
+
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+<div class="row" id="musicFeed">
+
+
+
+
+</div>
+<div id="navWrapper">
+  <div class="row" id="playerNav">
+
+
+    <script>
+      function pausePlayer() {
+        $('#audioPlayer').trigger("pause");
+      }
+
+      function playPlayer() {
+        $('#audioPlayer').trigger("play");
+      }
+
+    </script>
+
+  </div>
+</div>
+
+</body>
+</html>

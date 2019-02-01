@@ -1,0 +1,48 @@
+
+<div id="contentWrapper">
+  <h3>Killer V. King</h3>
+  <img height="400" width="400"src="./images/shakeyAlbum.jpg" alt="Girl in a jacket">
+
+  <img id='playButton' src="./images/play.png" onclick="playPlayer()" style="margin:15px;"height="50px" width="50px" alt="playButton">
+  <img id='pauseButton' onclick="pausePlayer()" src="./images/pause.png" style="margin:15px;"height="50px" width="50px" alt="playButton">
+
+
+  <script>
+    function pausePlayer() {
+      $('#audioPlayer').trigger("pause");
+    }
+
+    function playPlayer() {
+      $('#audioPlayer').trigger("play");
+    }
+
+  </script>
+
+
+
+  <!--<img style=" padding-top:30px;display:block;margin:auto;" height="400" width="450" src="./images/mapExample.png">-->
+
+</div>
+
+
+
+
+<div id="appBar" style="padding:20px;">
+
+  <div id="favoriteApps"></div>
+  <div id="socialApps">
+    <a onclick="loadPhoto()">Photo</a> &#9658;<br />
+    <a onclick="loadJamFinder()">Jam Finder</a> &#9658;<br />
+    <a onclick="loadLocalEvents()">Local Events</a> &#9658;<br />
+    <a onclick="loadUserProfile()">User Profile</a> &#9658;<br />
+    <a onclick="loadCityMusicPlayer()">City Player</a> &#9658;<br />
+    Chat &#9658;<br />
+    Forum &#9658;<br />
+    Plans &#9658;<br />
+
+  </div>
+
+
+
+</div>
+
