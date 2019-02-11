@@ -53,30 +53,32 @@ function loadJamFinder(){
 
 }
 
-function loadLocalEvents(){
+
+
+function loadFriendFinder(){
   // document.getElementById("content").innerHTML='<object type="text/html" data="./test.html" ></object>';
 
+  //document.getElementById("content").load('/test.html');
+  $( "#contentWrapperType2" ).load( "./htmlSnipets/friendFinder.html" );
+
+}
+
+function loadLocalEvents(){
+  // document.getElementById("content").innerHTML='<object type="text/html" data="./test.html" ></object>';
   //document.getElementById("content").load('/test.html');
   $( "#contentWrapperType2" ).load( "./htmlSnipets/localEvents.html" );
 }
-
 function loadUserProfile(){
   // document.getElementById("content").innerHTML='<object type="text/html" data="./test.html" ></object>';
-
   //document.getElementById("content").load('/test.html');
   $( "#contentWrapperType2" ).load( "./htmlSnipets/userProfile.html" );
-
 }
 
 function loadCityMusicPlayer(){
   // document.getElementById("content").innerHTML='<object type="text/html" data="./test.html" ></object>';
-
   //document.getElementById("content").load('/test.html');
   $( "#contentWrapperType2" ).load( "./htmlSnipets/cityMusicPlayer.html" );
-
 }
-
-
 function loadPhoto(){
   // document.getElementById("content").innerHTML='<object type="text/html" data="./test.html" ></object>';
   //document.getElementById("content").load('/test.html');

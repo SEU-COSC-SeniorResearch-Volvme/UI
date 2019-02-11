@@ -5,12 +5,26 @@ html,body{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-size: 3000px 1900px;
-	background-color:#5f3baf;
+	/* background-color:#5f3baf; */
+
+	background-color:#af97e6;
   font-size:20px;
   font-family: Helvetica;
   height:100%;
 
 }
+
+a{
+
+	color:#cc8ee3;
+	cursor: pointer;
+}
+a:hover{
+	cursor: pointer;
+	color:#ffab00;
+}
+
+
 #navBar{
 	/*height:75px;*/
 	height: 5%;
