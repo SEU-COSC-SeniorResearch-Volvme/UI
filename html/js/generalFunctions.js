@@ -1,38 +1,37 @@
 
 function signUp(){//send json object with possible email and password
-    var username = $("#username").val();
+    var email = $("#email").val();
     var password =$("#password").val();
-    var artistName = $("#artistName").val();
+    var name = $("#name").val();
     //var city =$("#city").val();
    // var genre = $("#genre").val();
 //email
   //artistname
   //password
   //script.crossorigin = 'anonymous';
-  	loadUserArea();
-    // $.ajax({
-	 //
-	 // 
-    //     url: 'http://volvme.xyz/api/user/signup',
-    //     type: 'POST',
-    //     contentType: 'application/json',
-    //     data: JSON.stringify({
-    //         email:username, password:password, name:artistName
-    //     }),
-    //     dataType: 'json',
-    //     success: function (response){
-    //         alert("success");
-    //         sendLoginData()
-    //     },
-    //     error: function (data, status, error) {
-    //         //$(location).attr('href', './artistProfile.html')
-    //         alert('error');
-    //         console.log(data, status, error);
-    //         var modal = document.getElementById('myModal');
-    //         $(".modal-content").html(data.responseJSON.message);
-    //         modal.style.display = "block";
-    //     }
-    // });
+  	// loadUserArea();
+    $.ajax({
+        url: './api/user/signup',
+        type: 'POST',
+        contentType: 'application/json',
+        data: JSON.stringify({
+            email:email, password:password, name:name
+        }),
+        dataType: 'json',
+        success: function (response){
+            alert("success");
+            // sendLoginData()
+				loadUserArea();
+        },
+        error: function (data, status, error) {
+            //$(location).attr('href', './artistProfile.html')
+            alert('error');
+            console.log(data, status, error);
+            var modal = document.getElementById('myModal');
+            $(".modal-content").html(data.responseJSON.message);
+            modal.style.display = "block";
+        }
+    });
 }
 
 function sendLoginData(){
